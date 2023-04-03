@@ -6,6 +6,9 @@ public class UserInterface {
 
         try {
 
+            User user = new User();
+            user.promptForIdAndPassword();
+
             String[] ingredients = AddItem.promptForIngredients();
 
             List<Recipe> recipes = RecipeManager.searchRecipes(ingredients);
