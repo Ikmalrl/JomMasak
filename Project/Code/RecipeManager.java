@@ -26,6 +26,7 @@ public class RecipeManager {
             List<Recipe> recipes = new ArrayList<>();
             ResultSet rs = pstmt.executeQuery();
 
+            //iterating over the rows of a ResultSet object named rs that was obtained from executing a SQL query.
             while(rs.next()) {
 
                 String recipeName = rs.getString("recipe_name");
